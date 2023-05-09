@@ -1,6 +1,5 @@
 package EmissionPackage;
 
-import EmissionPackage.EmissionController;
 
 import jakarta.persistence.*;
 

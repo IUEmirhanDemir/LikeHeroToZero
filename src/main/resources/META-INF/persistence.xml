@@ -7,6 +7,7 @@
 
         <class>EmissionPackage.EmissionController</class>
         <class>EmissionPackage.EmissionsDate</class>
+        <class>EmissionPackage.EmissionBean</class>
         <class>EmissionPackage.Test</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
