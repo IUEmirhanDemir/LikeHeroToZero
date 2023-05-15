@@ -10,19 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65891d5e-aaee-403c-8d60-41096656f8ab" name="Changes" comment="Project 1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/EmissionPackage/EmissionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/86d4f8b7-8c82-4d6f-a14d-d5262d917edd.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/86d4f8b7-8c82-4d6f-a14d-d5262d917edd/storage_v2/_src_/database/DATABASECO2.TRACE.DB.igrcAQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/86d4f8b7-8c82-4d6f-a14d-d5262d917edd/storage_v2/_src_/database/DATABASECO2.TRACE.DB.igrcAQ/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmissionPackage/EmissionBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmissionPackage/EmissionBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmissionPackage/EmissionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmissionPackage/EmissionsDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmissionPackage/EmissionsDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmissionPackage/EmissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmissionPackage/EmissionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EmissionPackage/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmissionPackage/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/DatabaseCO2.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/DatabaseCO2.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/DatabaseCO2.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DatabaseCO2.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,39 +84,29 @@
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "git-widget-placeholder": "master",
-    "import_schema_mapping": "<schema-mapping>\n  <databases>\n    <list>\n      <schema-mapping-item>\n        <source-data-source-id>13a3db23-b534-4625-b90d-c129e5606477</source-data-source-id>\n        <source-path>database/&quot;EMISSIONSDATENBANK&quot;/schema/&quot;PUBLIC&quot;</source-path>\n        <target-data-source-id>13a3db23-b534-4625-b90d-c129e5606477</target-data-source-id>\n        <target-path>database/&quot;EMISSIONSDATENBANK&quot;/schema/&quot;PUBLIC&quot;</target-path>\n      </schema-mapping-item>\n    </list>\n  </databases>\n</schema-mapping>",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.20643431",
     "project.structure.side.proportion": "0.28008446",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "s101-scope": "<All Modules>",
-    "s101-settings": "/Users/emir/Desktop/HeroProject/structure101-settings.java.hsw",
-    "s101-testModuleSuffix": "-test",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
     "spring.configuration.checksum": "c9c5fb87734f327164e7601fe16cc7d3",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "java.sql.Driver",
-      "mysql",
-      "sqlite",
       "h2"
     ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resourcess" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -290,14 +273,7 @@
       <workItem from="1683489014065" duration="3307000" />
       <workItem from="1683492341808" duration="6239000" />
       <workItem from="1683564200200" duration="9044000" />
-      <workItem from="1683573582284" duration="2042000" />
-      <workItem from="1683575633466" duration="1398000" />
-      <workItem from="1683651677019" duration="23142000" />
-      <workItem from="1683744328833" duration="6414000" />
-      <workItem from="1683813196903" duration="13193000" />
-      <workItem from="1683926433765" duration="19423000" />
-      <workItem from="1684024499960" duration="6587000" />
-      <workItem from="1684072174523" duration="2688000" />
+      <workItem from="1683573582284" duration="1817000" />
     </task>
     <task id="LOCAL-00001" summary="Project 1">
       <created>1683464377874</created>
@@ -341,14 +317,7 @@
       <option name="project" value="LOCAL" />
       <updated>1683569708522</updated>
     </task>
-    <task id="LOCAL-00007" summary="Project 1">
-      <created>1683656454509</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1683656454509</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,9 +369,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project 1" />
     <option name="LAST_COMMIT_MESSAGE" value="Project 1" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
