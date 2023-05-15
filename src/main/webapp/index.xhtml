@@ -1,76 +1,130 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:p="http://primefaces.org/ui"
-      xmlns:f="http://java.sun.com/jsf/core">
+      xmlns:p="http://primefaces.org/ui">
+
+
 <h:head>
-    <title>Emission Data</title>
-    <style type="text/css">
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f5f5;
-        color: #333;
-        margin: 0;
-        padding: 0;
-    }
-
-    .container {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .header {
-        background-color: #673ab7;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-        font-size: 2em;
-        margin-bottom: 1em;
-    }
-
-    select, table {
-        width: 100%;
-        margin-bottom: 1em;
-    }
-
-    table {
-        border-collapse: collapse;
-        text-align: left;
-    }
-
-    th, td {
-        padding: 0.5em;
-        border-bottom: 1px solid #ddd;
-    }
-
-    tr:hover {background-color: #f5f5f5;}
-</style>
+    <title>Emissionsdaten</title>
+    <link rel="stylesheet" type="text/css" href="Style.css"/>
 </h:head>
+
 <h:body>
+
     <div class="container">
-    <div class="header">
-        <h2>Emission Data</h2>
+
+        <div class="header">
+
+            <h2>Emissionsdaten</h2>
+
+            <h:form class="login-form">
+
+                <div class="form-group">
+                    <h:outputText value="Benutzername"></h:outputText>
+                    <h:inputText value="#{loginBean.user}" placeholder="Benutzername"/>
+                </div>
+
+                <div class="form-group">
+                    <h:outputText value="Passwort"></h:outputText>
+                    <h:inputSecret value="#{loginBean.password}" placeholder="Passwort"/>
+                </div>
+
+                <div class="form-group">
+                    <h:commandButton value="Anmelden" action="#{loginBean.login}"/>
+                </div>
+
+            </h:form>
+
+            <h:panelGroup rendered="#{loginBean.loggedIn}">
+                <h:outputText value="Angemeldet als #{loginBean.user}"/>
+            </h:panelGroup>
+
+
+            <h:form id="add" rendered="#{loginBean.loggedIn}">
+
+                <h:panelGrid columns="37" cellpadding="5" style="margin: 0 auto;">
+
+                    <p:outputLabel for="countryNames" value="Country Name"/>
+                    <p:inputText id="countryNames" value="#{emissionBean.emissionsDate.country_name}"
+                                 rendered="#{loginBean.loggedIn}"  placeholder="Beispiel: Germany"/>
+
+
+                    <p:outputLabel for="amount_Values" value="Amount Value"/>
+                    <p:inputNumber id="amount_Values" value="#{emissionBean.emissionsDate.amount_value}"
+                                   rendered="#{loginBean.loggedIn}" decimalPlaces="9" />
+
+
+                    <p:outputLabel for="date" value="Date"/>
+                    <p:inputNumber id="date" value="#{emissionBean.emissionsDate.date}" rendered="#{loginBean.loggedIn}"
+                                   maxlength="4" maxValue="2023" minValue="2019" decimalSeparator="" />
+
+
+                    <p:commandButton update="@form emissionDates:emissionDateList" value="Add"
+                                     action="#{emissionBean.add}" rendered="#{loginBean.loggedIn}">
+                    </p:commandButton>
+
+                </h:panelGrid>
+
+
+            </h:form>
+
+        </div>
+
+
+        <h:form id="emissionDates">
+
+            <p:growl id="growl" sticky="true" life="2000"/>
+
+            <p:dataTable id="emissionDateList" var="emissionDate" value="#{emissionBean.emissionsDates}">
+
+                <p:column headerText="Id">
+                    <h:outputText value="#{emissionDate.id}"/>
+                </p:column>
+
+                <p:column headerText="Country Name" filterBy="#{emissionDate.country_name}"
+                          filterPlaceholder="Beispiel Germany">
+                    <p:inputText id="countryName" value="#{emissionDate.country_name}"
+                                 rendered="#{loginBean.loggedIn}"/>
+                    <h:outputText id="countryNamess" value="#{emissionDate.country_name}"
+                                  rendered="#{!loginBean.loggedIn}"/>
+                </p:column>
+
+                <p:column headerText="Amount Value">
+                    <p:inputText id="amount_Value" value="#{emissionDate.amount_value}"
+                                 rendered="#{loginBean.loggedIn}"/>
+                    <h:outputText id="amount_Valuess" value="#{emissionDate.amount_value}"
+                                  rendered="#{!loginBean.loggedIn}"/>
+                </p:column>
+
+                <p:column headerText="Date">
+                    <p:inputText id="dates" value="#{emissionDate.date}" rendered="#{loginBean.loggedIn}"/>
+                    <h:outputText id="datess" value="#{emissionDate.date}" rendered="#{!loginBean.loggedIn}"/>
+                </p:column>
+
+                <p:column>
+
+                    <p:commandButton update="emissionDateList" value="Delete"
+                                     action="#{emissionBean.delete(emissionDate)}" rendered="#{loginBean.loggedIn}">
+                    </p:commandButton>
+
+                    <p:column>
+                        <p:commandButton style="float: right" id="save" value="Save"
+                                         action="#{emissionBean.update}" rendered="#{loginBean.loggedIn}"
+                                         update=":emissionDates:growl">
+                            <p:ajax execute="@form"/>
+                        </p:commandButton>
+                    </p:column>
+
+                </p:column>
+
+            </p:dataTable>
+
+        </h:form>
+
     </div>
 
-        <p:dataTable id="emissionTable" var="emission" value="#{emissionBean.emissionsDates}">
-
-            <p:column headerText="Country Name">
-                <h:outputText value="#{emission.country_name}"/>
-            </p:column>
-            <p:column headerText="Country Code">
-                <h:outputText value="#{emission.country_code}"/>
-            </p:column>
-            <p:column headerText="Indicator">
-                <h:outputText value="#{emission.indicator_name}"/>
-            </p:column>
-            <p:column headerText="Year">
-                <h:outputText value="#{emission.date}"/>
-            </p:column>
-            <p:column headerText="CO2 Emissions">
-                <h:outputText value="#{emission.amount_value}"/>
-            </p:column>
-        </p:dataTable>
-    </div>
 </h:body>
+
 </html>

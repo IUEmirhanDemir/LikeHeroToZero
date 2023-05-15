@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: mediumblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+select, table {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+
+tr:hover {
+    background-color: darkblue;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h3 {
+    text-align: center;
+    color: mediumblue;
+}
+
+
+.login-form .form-group input[type="submit"] {
+    background-color: mediumblue;
+    color: ghostwhite;
+    cursor: pointer;
+}
+
+
+.login-form .form-group input[type="submit"]:hover {
+    background-color: darkblue;
+}

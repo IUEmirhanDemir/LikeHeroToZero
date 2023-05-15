@@ -9,15 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65891d5e-aaee-403c-8d60-41096656f8ab" name="Changes" comment="Abgeschlossen">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea53f89b-fb68-442f-b7ea-6117c6866198.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ea53f89b-fb68-442f-b7ea-6117c6866198.xml" afterDir="false" />
+    <list default="true" id="65891d5e-aaee-403c-8d60-41096656f8ab" name="Changes" comment="Project 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPackage/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginPackage/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPackage/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginPackage/loginBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPackage/userBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginPackage/userDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/EmissionsDatenbank.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EmissionsDatenbank.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/EmissionsDatenbank.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EmissionsDatenbank.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmissionPackage/EmissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmissionPackage/EmissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmissionPackage/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmissionPackage/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/DatabaseCO2.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DatabaseCO2.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,46 +77,36 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;\n  &lt;databases&gt;\n    &lt;list&gt;\n      &lt;schema-mapping-item&gt;\n        &lt;source-data-source-id&gt;13a3db23-b534-4625-b90d-c129e5606477&lt;/source-data-source-id&gt;\n        &lt;source-path&gt;database/&amp;quot;EMISSIONSDATENBANK&amp;quot;/schema/&amp;quot;PUBLIC&amp;quot;&lt;/source-path&gt;\n        &lt;target-data-source-id&gt;13a3db23-b534-4625-b90d-c129e5606477&lt;/target-data-source-id&gt;\n        &lt;target-path&gt;database/&amp;quot;EMISSIONSDATENBANK&amp;quot;/schema/&amp;quot;PUBLIC&amp;quot;&lt;/target-path&gt;\n      &lt;/schema-mapping-item&gt;\n    &lt;/list&gt;\n  &lt;/databases&gt;\n&lt;/schema-mapping&gt;&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.20643431&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.28008446&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;s101-scope&quot;: &quot;&lt;All Modules&gt;&quot;,
-    &quot;s101-settings&quot;: &quot;/Users/emir/Desktop/HeroProject/structure101-settings.java.hsw&quot;,
-    &quot;s101-testModuleSuffix&quot;: &quot;-test&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;c9c5fb87734f327164e7601fe16cc7d3&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.20643431",
+    "project.structure.side.proportion": "0.28008446",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "spring.configuration.checksum": "c9c5fb87734f327164e7601fe16cc7d3",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;java.sql.Driver&quot;,
-      &quot;mysql&quot;,
-      &quot;sqlite&quot;,
-      &quot;h2&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resourcess" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -285,17 +273,7 @@
       <workItem from="1683489014065" duration="3307000" />
       <workItem from="1683492341808" duration="6239000" />
       <workItem from="1683564200200" duration="9044000" />
-      <workItem from="1683573582284" duration="2042000" />
-      <workItem from="1683575633466" duration="1398000" />
-      <workItem from="1683651677019" duration="23142000" />
-      <workItem from="1683744328833" duration="6414000" />
-      <workItem from="1683813196903" duration="13193000" />
-      <workItem from="1683926433765" duration="19423000" />
-      <workItem from="1684024499960" duration="6587000" />
-      <workItem from="1684072174523" duration="6725000" />
-      <workItem from="1684361263480" duration="28000" />
-      <workItem from="1684405684981" duration="14282000" />
-      <workItem from="1684520931182" duration="1911000" />
+      <workItem from="1683573582284" duration="1817000" />
     </task>
     <task id="LOCAL-00001" summary="Project 1">
       <created>1683464377874</created>
@@ -339,21 +317,7 @@
       <option name="project" value="LOCAL" />
       <updated>1683569708522</updated>
     </task>
-    <task id="LOCAL-00007" summary="Project 1">
-      <created>1683656454509</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1683656454509</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Abgeschlossen">
-      <created>1684162691822</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1684162691822</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,11 +368,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project 1" />
-    <MESSAGE value="Abgeschlossen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Abgeschlossen" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <option name="LAST_COMMIT_MESSAGE" value="Project 1" />
   </component>
 </project>

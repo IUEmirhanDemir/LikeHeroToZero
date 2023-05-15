@@ -9,6 +9,29 @@ import java.io.Serializable;
 @Table(name = "CO2_TABLE")
 public class EmissionsDate implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    private String country_name;
+
+    private String country_code;
+    private String indicator_name;
+    private int date;
+    private double amount_value;
+
+    public EmissionsDate() {
+    }
+
+
+    //Speziell für die Test-Klasse
+    public EmissionsDate(String country_name, String country_code, String indicator_name, int date, double amount_value) {
+        this.country_name = country_name;
+        this.country_code = country_code;
+        this.indicator_name = indicator_name;
+        this.date = date;
+        this.amount_value = amount_value;
+    }
+
 
     public long getId() {
         return id;
@@ -57,16 +80,6 @@ public class EmissionsDate implements Serializable {
     public void setAmount_value(double amount_value) {
         this.amount_value = amount_value;
     }
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
-    private String country_name;
-
-    private String country_code;
-    private String indicator_name;
-    private int date;
-    private double amount_value;
 
 
 }
