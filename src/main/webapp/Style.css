@@ -16,10 +16,13 @@ body {
     color: white;
     padding: 10px;
     text-align: center;
+    margin-bottom: 16px;
+    font-size: 31px;
 }
 
 select, table {
     width: 100%;
+    margin-bottom: 12px;
 }
 
 table {
@@ -31,28 +34,49 @@ table {
 tr:hover {
     background-color: darkblue;
 }
-
 .login-form {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    background-color: transparent;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    padding: 20px;
 }
 
 .login-form h3 {
     text-align: center;
     color: mediumblue;
+    margin-bottom: 20px;
 }
 
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form .form-group input[type="text"],
+.login-form .form-group input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
 
 .login-form .form-group input[type="submit"] {
+    width: 100%;
+    padding: 10px;
     background-color: mediumblue;
-    color: ghostwhite;
+    color: white;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
-
 
 .login-form .form-group input[type="submit"]:hover {
     background-color: darkblue;

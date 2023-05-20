@@ -9,16 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65891d5e-aaee-403c-8d60-41096656f8ab" name="Changes" comment="Abgeschlossen">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea53f89b-fb68-442f-b7ea-6117c6866198.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ea53f89b-fb68-442f-b7ea-6117c6866198.xml" afterDir="false" />
+    <list default="true" id="65891d5e-aaee-403c-8d60-41096656f8ab" name="Changes" comment="Abgeschlossen.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPackage/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginPackage/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPackage/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginPackage/loginBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPackage/userBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginPackage/userDate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/EmissionsDatenbank.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EmissionsDatenbank.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/EmissionsDatenbank.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EmissionsDatenbank.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +53,9 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -124,7 +122,7 @@
   <component name="RunDashboard">
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.8">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.9">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="HeroProject" />
@@ -245,10 +243,99 @@
         </option>
       </method>
     </configuration>
+    <configuration name="Tomcat 10.1.9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.9" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="HeroProject:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/HeroProject_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="24569c02-5018-402a-bc10-6bfec8452f01" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50212" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="HeroProject:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Test (1)" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Test" />
+      <item itemvalue="Tomcat Server.Tomcat 10.1.9" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.8" />
     </list>
     <recent_temporary>
@@ -296,6 +383,8 @@
       <workItem from="1684361263480" duration="28000" />
       <workItem from="1684405684981" duration="14282000" />
       <workItem from="1684520931182" duration="1911000" />
+      <workItem from="1684694671322" duration="2323000" />
+      <workItem from="1684697071817" duration="1002000" />
     </task>
     <task id="LOCAL-00001" summary="Project 1">
       <created>1683464377874</created>
@@ -353,7 +442,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684162691822</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Abgeschlossen.">
+      <created>1684581243345</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684581243345</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Abgeschlossen.">
+      <created>1684581335121</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684581335121</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +508,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project 1" />
     <MESSAGE value="Abgeschlossen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Abgeschlossen" />
+    <MESSAGE value="Abgeschlossen." />
+    <option name="LAST_COMMIT_MESSAGE" value="Abgeschlossen." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
